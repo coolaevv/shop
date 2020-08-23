@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Big Shop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <img src="./img/bg.jpg" class="bg-img" alt="">
+    <header>
+        <div class="logo">
+            <h1>Big Shop</h1>
+        </div>
+        <div class="nav">
+            <div class="nav-btn">
+                <input type="text" id="search" placeholder="Search">
+                <select id="select">
+                    <option>Collection</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="hide-div"></div>
+        <div class="ban">
+            <div class="txt">
+                <h1>Summer</h1>
+                <h1>Collection</h1>
+                <h1>25% OFF</h1>
+                <button>Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="bag-block">
+        <div class="title">
+            <h1>Trendy Arrivals</h1>
+        </div>
+        <div class="bags">
+            <div class="bag">
+                <div class="opt"></div>
+                <div class="images-product">
+                    <img src="./img/bags/1.jpg" alt="Festive">
+                </div>
+                <div class="description">
+                    <p>Festive</p>
+                    <strong>9 999,00 ₽</strong>
+                </div>
+            </div>
+            <div class="bag">
+                <div class="opt"></div>
+                <div class="images-product">
+                    <img src="./img/bags/2.jpg" alt="Ralph Lauren RL50 medium">
+                </div>
+                <div class="description">
+                    <p>Ralph Lauren RL50 medium</p>
+                    <strong>176 000,00 ₽</strong>
+                </div>
+            </div>
+            <div class="bag">
+                <div class="opt"></div>
+                <div class="images-product">
+                    <img src="./img/bags/3.jpg" alt="Furla Brava">
+                </div>
+                <div class="description">
+                    <p>Furla Brava</p>
+                    <strong>20 620,00 ₽</strong>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="cont-ban-two">
+        <div class="description">
+            <div class="text">
+                <h1>Our Brands</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto consequuntur dolor deserunt. 
+                    Aperiam eum optio sequi adipisci totam placeat eaque. 
+                </p>
+
+                <p class="op">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quae recusandae necessitatibus soluta. 
+                    Quasi earum animi eveniet dolor! Quae magni eveniet rem sequi autem eaque eius excepturi dolores modi quidem.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quae recusandae necessitatibus soluta. 
+                    Quasi earum animi eveniet dolor! Quae magni eveniet rem sequi autem eaque eius excepturi dolores modi quidem.
+                </p>
+            </div>
+        </div>
+        <div class="ban">
+            <img src="./img/mobile.JPG" alt="mobile">
+        </div>
+    </div>
+
+        <div class="title">
+            <h1>Our Showcase</h1>
+        </div>
+        <select class="categories">
+            <option id="women" selected>Women</option>
+            <option id="man">Man</option>
+        </select>
+
+        <script>
+            $('#women ').click(function(){
+                $('.w1').attr('src', './img/watch/1.jpg')
+                $('.d1').text('MICHAEL KORS MK2583')
+                $('.pr1').text('9 390,56 р')
+
+                $('.w2').attr('src', './img/watch/2.jpg')
+                $('.d2').text('CASIO BGA2502A')
+                $('.pr2').text('8 990,00 р')
+
+                $('.w3').attr('src', './img/watch/3.jpg')
+                $('.d3').text('BERING 15531-262')
+                $('.pr3').text('7 590,00 р')
+            })
+
+            $('#man').click(function(){
+                $('.w1').attr('src', './img/watch/4.jpg')
+                $('.d1').text('SKAGEN SKW6103')
+                $('.pr1').text('6 490,00 р')
+
+                $('.w2').attr('src', './img/watch/5.jpg')
+                $('.d2').text('BURBERRY BU10002')
+                $('.pr2').text('12 990,00 р')
+
+                $('.w3').attr('src', './img/watch/6.jpg')
+                $('.d3').text('BERING 15540-077')
+                $('.pr3').text('7 790,00 р')
+            })
+        </script>
+
+    <div class="bags">
+        <div class="bag">
+            <div class="opt"></div>
+            <div class="images-product">
+                <img src="./img/watch/1.jpg" class="w1" alt="MICHAEL KORS MK2583">
+            </div>
+            <div class="description">
+                <p class="d1">MICHAEL KORS MK2583</p>
+                <strong class="pr1">9 390,56 р</strong>
+            </div>
+        </div>
+        <div class="bag">
+            <div class="opt"></div>
+            <div class="images-product">
+                <img src="./img/watch/2.jpg" class="w2" alt="Ralph Lauren RL50 medium">
+            </div>
+            <div class="description">
+                <p class="d2">CASIO BGA2502A</p>
+                <strong class="pr2">8 990,00 р</strong>
+            </div>
+        </div>
+        <div class="bag">
+            <div class="opt"></div>
+            <div class="images-product">
+                <img src="./img/watch/3.jpg" class="w3" alt="BERING 15531-262">
+            </div>
+            <div class="description">
+                <p class="d3">BERING 15531-262</p>
+                <strong class="pr3">7 590,00 р</strong>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="newslettrer">
+        <h1>Newsletter</h1>
+        <input type="text" placeholder="Enter your e-mail address">
+        <input type="button" value="submit">
+    </div>
+    
+    <div class="footer">
+        <h1>Big Shop</h1>
+        <ul>
+            <li>Man</li>
+            <li>Woman</li>
+            <li>Kids</li>
+            <li>Bags</li>
+            <li>Watches</li>
+            <li>Toys</li>
+        </ul>
+
+        <ul>
+            <li>
+                <i class="fab fa-facebook"></i>
+            </li>
+            <li>
+                <i class="fab fa-google"></i>
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+                <i class="fab fa-twitter"></i>
+            </li>
+        </ul>
+</body>
+</html>
